@@ -1,159 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-<style>* /* General Reset and Body Styling */
-  * {
-      margin: 0;
-      padding: 0;
+<style>* {
+    /*   border: solid 1px; */
       box-sizing: border-box;
-  }
-  
-  body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      background-color: #f7f7f7;
-      color: #333;
-      margin: 40px;
-      padding: 0;
-  }
-  
-  .container {
-      width: 80%;
-      margin: 0 auto;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-  }
-  
-  /* Header Section */
-  header {
-      text-align: center;
-      margin-bottom: 30px;
-  }
-  
-  header h1 {
-      font-size: 40px;
-      color: #2C3E50;
-      margin-bottom: 5px;
-  }
-  
-  header p {
-      font-size: 18px;
-      color: #7F8C8D;
-  }
-  
-  /* Section Title */
-  h2 {
-      font-size: 28px;
-      color: #2C3E50;
-      border-bottom: 2px solid #2980B9;
+    }
+    li {
+      list-style-type: none;
+    }
+    ul {
+      padding: 0px;
       display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
-  }
-  
-  /* Contact Info Styling */
-  .contact-info ul {
-      list-style: none;
-      line-height: 1.8;
-      font-size: 16px;
-      color: #7F8C8D;
-  }
-  
-  .contact-info ul li {
-      margin-bottom: 10px;
-  }
-  
-  /* Experience Section */
-  .experience ul {
-      list-style: none;
-  }
-  
-  .experience-item {
-      background-color: #ecf0f1;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .experience-item h3 {
-      font-size: 20px;
-      color: #34495E;
-      margin-bottom: 5px;
-  }
-  
-  .experience-item p {
-      font-size: 16px;
-      color: #7F8C8D;
-  }
-  
-  /* Education Section */
-  .education-item {
-      background-color: #ecf0f1;
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .education-item h3 {
-      font-size: 20px;
-      c
-  
-}</style>
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-  <br><br>
-  <h1>Resume</h1>
-  <h2>Emily</h2>
-  <hr />
-  <br>
-  <p class="head">Interests</p>
-  <ul>
-    <li>Drawing</li>
-    <li>Photography</li>
-    <li>Design</li>
-    <li>Programming</li>
-    <li>Computer Science</li>
-  </ul>
-  <p class="head">Skills</p>
-  <ul>
-    <li>Web Design with HTML & CSS</li>
-  </ul>
-  <p class="head">Education</p>
-  <ul>
-    <a href="http://www.wiltonhighschool.org/pages/Wilton_High_School">
-      <li>Wilton High School</li>
-    </a>
-    <!--Link-->
-    <a href="https://www.silvermineart.org/">
-      <li>Silvermine School of Arts</li>
-    </a>
-    <li>Codeacademy</li>
-  </ul>
-  <p class="head">Experience</p>
-  <ul>
-    <li>Student Technology Intern for Wilton School District</li>
-    <li>Babysitter</li>
-  </ul>
-  <p class="head">Extracurriculars</p>
-  <ul>
-    <li>Recycling Club</li>
-    <li>Gardening Club</li>
-    <li>Book Club</li>
-  </ul>
-</div>
-<div class="right"></div>
-<div id="footer">
-  <h2 id="name">Emily</h2></div>
+    }
+    
+    .center {
+      text-align: center;
+    }
+    body {
+      background-color: #9593a8;
+    }
+    h2,
+    h3,
+    h4,
+    .content p {
+      color: #3a3560;
+    }
+    .grey {
+      color: #838385;
+    }
+    h3 {
+      padding-top: 10px;
+      padding-bottom: 3px;
+      font-size: 17px;
+    }
+    h4 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+      line-height: 18px;
+    }
+    .paper {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #d2d3d6;
+      padding: 50px;
+      margin-top: 45px;
+      box-shadow: -10px 40px 37px 5px #3a3560;
+    }
+    .paper2 {
+      background-color: #e2e2e4;
+    }
+    
+    .contact {
+      display: inline-block;
+      width: 70px;
+      text-align: center;
+      height: 1070px;
+      vertical-align: top;
+      padding-top: 440px;
+    }
+    .contact li {
+      padding-top: 34px;
+      padding-bottom: 34px;
+    }
+    .contact h3.grey {
+      writing-mode: vertical-rl;
+      color: #9ca8a8;
+      padding-top: 70px;
+      padding-bottom: 40px;
+      padding-left: 5px;
+    }
+    .content {
+      display: inline-block;
+    }
+    .left {
+      display: inline-block;
+      width: 270px;
+      padding: 30px;
+      box-sizing: border-box;
+      margin-right: 5px;
+      border-left: solid 2px #a8adb0;
+      box-sizing: border-box;
+      height: 1070px;
+      vertical-align: top;
+    }
+    .left h2 {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      line-height: 35px;
+      letter-spacing: 2px;
+      font-size: 27px;
+    }
+    .right {
+      display: inline-block;
+      width: 330px;
+      box-sizing: border-box;
+      height: 1070px;
+    }
+    .pic {
+      position: relative;
+      margin-top: 40px;
+      padding-left: 15px;
+    }
+    .colorbox {
+      position: absolute;
+      top: 357px;
+      width: 345px;
+      height: 90px;
+      background-color: rgba(69, 73, 173, 0.78);
+    }
+    .colorbox2 {
+      background-color: #93a0a8;
+      position: absolute;
+      top: 447px;
+      left: 347px;
+      width: 26px;
+      height: 90px;
+    }
+    .colorbox3 {
+      position: absolute;
+      top: 410px;
+      left: 130px;
+    }
+    .year h4 {
+      display: inline-block;
+    }
+    .year .info {
+      display: inline-block;
+      text-align: right;
+      width: 230px;
+      font-size: 14px;
+      vertical-align: middle;
+      height: auto;
+      margin-left: 14px;
+    }
+    .language {
+      margin: -12px 0px;
+      padding: 0px;
+    }
+    
+    .language h4 {
+      display: inline-block;
+      margin-right: 10px;
+      width: 83px;
+    }
+    .rate {
+      vertical-align: middle;
+      height: auto;
+      display: inline-block;
+    }
+    .bigo {
+      width: 12px;
+      height: 12px;
+      margin: 0px 3px;
+      border-radius: 100%;
+      background-color: #93a0a8;
+      display: inline-block;
+    }
+    .smlo {
+      width: 8px;
+      height: 8px;
+      margin: 2px 5px;
+      border-radius: 100%;
+      background-color: #4b4b4d;
+      display: inline-block;
+    }
+    .skill {
+      margin-top: 90px;
+      height:auto;
+      vertical-align:bottom;
+    }
+    .software {
+      display: inline-block;
+      width: 80px;
+      height: 120px;
+      text-align: center;
+      position: relative;
+      /*   margin:0;padding:0; */
+    }
+    .software h4 {
+      display: block;
+    /*   margin-top: 90px; */
+    }
+    .pie {
+      width: 70px;
+      height: 70px;
+      background-color: #93a0a8;
+      overflow: hidden;
+      border-radius: 100%;
+      position: absolute;
+      left: 4px;
+    }
+    .cutpie1 {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(69, 73, 173, 1);
+      position: absolute;
+      transform-origin: bottom right;
+      transform: rotate(0deg);
+      left: 35px;
+      top: -35px;
+    }
+    .cutpie2 {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(69, 73, 173, 1);
+    /*   border:solid 1px; */
+      position: absolute;
+      transform-origin: bottom right;
+      transform: rotate(30deg);
+      left: 26px;
+      top: 1px;
+    }
+    .cutpie2s {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(69, 73, 173, 1);
+    /*   border:solid 1px; */
+      position: absolute;
+      transform-origin: bottom right;
+      transform: rotate(150deg);
+      left: -35px;
+      top: -34px;
+    }
+    .cutpie3 {
+      width: 70px;
+      height: 70px;
+      background-color: rgba(69, 73, 173, 1);
+    /*   border:solid 1px; */
+      position: absolute;
+      transform-origin: bottom left;
+      transform: rotate(240deg);
+      left: 35px;
+      top: -35px;
+    }
+    .software h4 {
+      padding-top: 60px;
+    }
+    .skill h3 {
+      vertical-align: middle;
+      height: auto;
+      margin-top:-30px;
+    }
+    .skillgroup {
+      display: inline-block;
+      text-align: right;
+      width: 250px;
+    /*   font-size: 14px; */
+      vertical-align: middle;
+      height: auto;
+      margin-left: 0px;
+    }</style>
 <body>
-  
+    <div class="paper">
+        <div class="paper2">
+          <div class="contact">
+            <ul>
+              <li><img src="https://i.postimg.cc/VL1v2bLL/icon-marker.png" alt="" width=27px></li>
+              <li><img src="https://i.postimg.cc/fRC98fcN/icon-phone.png" alt="" width=27px></li>
+              <li><img src="https://i.postimg.cc/g0GxRXQT/icon-email.png" alt="" width=27px</li>
+              <li><img src="https://i.postimg.cc/VNwCRHr4/icon-earth.png" alt="" width=27px></li>
+            </ul>
+            <h3 class="grey">LANCUAGE</h3>
+          </div>
+          <div class="content">
+            <div class="left">
+              <h2>REYES <br>RON JOSHUA</h2>
+              <h3>PROFILE</h3>
+              <p style="text-align: justify;color:#838385">Pogi ako. </p>
+              <h3>CONTACT</h3>
+              <h4>Address</h4>
+              <p> Brgy. 89 SanJose Tacloban City, Leyte </p>
+              <h4>Phone</h4>
+              <p>09303771632</p>
+              <h4>Email</h4>
+              <p>reyesronjoshua@mail.com</p>
+              <h4>Website</h4>
+              <p></p>
+              <div class="language">
+                <h4>Tagaog</h4>
+                <div class="rate">
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="smlo"></div>
+                  <div class="smlo"></div>
+                </div>
+              </div>
+              <div class="language">
+                <h4>English</h4>
+                <div class="rate">
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="smlo"></div>
+                  <div class="smlo"></div>
+                  <div class="smlo"></div>
+                </div>
+              </div>
+              <div class="language">
+                <h4>Waray-Waray</h4>
+                <div class="rate">
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="bigo"></div>
+                  <div class="smlo"></div>
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="pic">
+                <img src="https://i.postimg.cc/jdnTLWnH/women2.jpg" alt="" width=345px>
+                <div class="colorbox"></div>
+                <div class="colorbox2"></div>
+                 <img class="colorbox3" src="https://i.postimg.cc/KjHJLvVw/arrow.png" alt="" width=124px>
+              </div>
+              <h3 class="center" style="padding:80px 0px 5px 65px;">EXPERIENCE</h3>
+              <div class="year">
+                <h4 class="center" style="padding:80px 0px 5px 65px;">None</h4>
+      
+              <div class="skill">
+                <h3 style="display: inline-block;">SKILLS</h3>
+                <div class="skillgroup">
+                <div class="software">
+                  <div class="pie">
+                   <div class="cutpie1"></div> 
+                  </div>            
+                  <h4>Photoshop</h4>
+                </div>
+                <div class="software">
+                  <div class="pie">
+                   <div class="cutpie1"></div>
+                   <div class="cutpie2s"></div> 
+                  </div>
+                  <h4>Illustration</h4>
+                </div>
+                <div class="software">
+                  <div class="pie">
+                    <div class="cutpie1"></div>
+                   <div class="cutpie2"></div> 
+                  </div>  
+                  <h4>Indesign</h4>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="greybox"></div>
+        </div>
+      </div>
 </body>
 </html>
